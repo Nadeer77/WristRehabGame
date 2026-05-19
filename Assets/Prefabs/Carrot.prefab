@@ -540,6 +540,37 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1828041111792445088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7808790515385399720}
+  m_Layer: 0
+  m_Name: SliceStackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7808790515385399720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828041111792445088}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.04814374, w: 0.9988404}
+  m_LocalPosition: {x: 250, y: 0, z: -50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4576078850728734283}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2190953321433966702
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4576078850728734283}
+  - component: {fileID: 5108177292802906981}
   m_Layer: 0
   m_Name: Carrot
   m_TagString: Untagged
@@ -744,7 +776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3570684147602223740}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.048141673, y: 0.9988406, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.04814374, w: 0.9988404}
   m_LocalPosition: {x: -0.9688, y: 1.6407, z: -0.0856}
   m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_ConstrainProportionsScale: 0
@@ -762,8 +794,39 @@ Transform:
   - {fileID: 2743646817229123622}
   - {fileID: 3186004665271003415}
   - {fileID: 8771089927332662796}
+  - {fileID: 7808790515385399720}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 5.519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.519}
+--- !u!114 &5108177292802906981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3570684147602223740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035d5fcd63886f14d95e17ca761305ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VegetableSliceController
+  slices:
+  - {fileID: 8771089927332662796}
+  - {fileID: 3186004665271003415}
+  - {fileID: 2743646817229123622}
+  - {fileID: 2551520837388668843}
+  - {fileID: 5700945258510075365}
+  - {fileID: 1827545103467121727}
+  - {fileID: 3974530875162726750}
+  - {fileID: 3335907380336217550}
+  - {fileID: 4913584828288370884}
+  - {fileID: 642888324182284490}
+  - {fileID: 5560929181949289010}
+  - {fileID: 5467840145395725805}
+  - {fileID: 1844760208742956460}
+  stackPoint: {fileID: 7808790515385399720}
+  vesselPoint: {fileID: 0}
+  spacing: 0.12
+  moveAmount: 0.05
 --- !u!1 &4555165335765429589
 GameObject:
   m_ObjectHideFlags: 0

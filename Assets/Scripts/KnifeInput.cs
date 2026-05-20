@@ -10,6 +10,11 @@ public class KnifeInput : MonoBehaviour
     // STORE CURRENT VEGETABLE
     private VegetableSliceController cachedVeg;
 
+    public AudioSource audioSource;
+
+    public AudioClip knifeCutSFX;
+    public AudioClip vesselSFX;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -32,6 +37,8 @@ public class KnifeInput : MonoBehaviour
                 if (currentVeg != null)
                 {
                     currentVeg.CutSlice();
+
+                    audioSource.PlayOneShot(knifeCutSFX);
                 }
             }
         }
@@ -96,6 +103,8 @@ public class KnifeInput : MonoBehaviour
         if (cachedVeg != null)
         {
             cachedVeg.MoveSlicesToVessel();
+
+            audioSource.PlayOneShot(vesselSFX);
         }
     }
 

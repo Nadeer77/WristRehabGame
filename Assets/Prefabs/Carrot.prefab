@@ -778,7 +778,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.04814374, w: 0.9988404}
   m_LocalPosition: {x: -0.9688, y: 1.6407, z: -0.0856}
-  m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
+  m_LocalScale: {x: 0.0015, y: 0.0015, z: 0.0015}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1844760208742956460}
@@ -810,7 +810,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VegetableSliceController
   slices:
-  - {fileID: 8771089927332662796}
   - {fileID: 3186004665271003415}
   - {fileID: 2743646817229123622}
   - {fileID: 2551520837388668843}
@@ -823,8 +822,8 @@ MonoBehaviour:
   - {fileID: 5560929181949289010}
   - {fileID: 5467840145395725805}
   - {fileID: 1844760208742956460}
+  - {fileID: 8771089927332662796}
   stackPoint: {fileID: 7808790515385399720}
-  vesselPoint: {fileID: 0}
   spacing: 0.12
   moveAmount: 0.05
 --- !u!1 &4555165335765429589

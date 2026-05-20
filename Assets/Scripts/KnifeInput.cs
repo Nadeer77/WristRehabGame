@@ -4,7 +4,11 @@ public class KnifeInput : MonoBehaviour
 {
     private Animator animator;
 
+    // TRUE after slices pushed
     private bool hasPushedSlices = false;
+
+    // STORE CURRENT VEGETABLE
+    private VegetableSliceController cachedVeg;
 
     void Start()
     {
@@ -16,7 +20,9 @@ public class KnifeInput : MonoBehaviour
         VegetableSliceController currentVeg =
             FindFirstObjectByType<VegetableSliceController>();
 
-        // CUTTING
+        // =====================================
+        // DOWN ARROW = CUT
+        // =====================================
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (!hasPushedSlices)
@@ -30,7 +36,9 @@ public class KnifeInput : MonoBehaviour
             }
         }
 
-        // KNIFE RETURN UP
+        // =====================================
+        // UP ARROW = RETURN KNIFE UP
+        // =====================================
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             if (!hasPushedSlices)
@@ -39,38 +47,61 @@ public class KnifeInput : MonoBehaviour
             }
         }
 
-        // PUSH TO VESSEL
+        // =====================================
+        // RIGHT ARROW = PUSH TO VESSEL
+        // =====================================
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (!hasPushedSlices)
             {
-                animator.SetBool("isPushing", true);
+                // PLAY PUSH ANIMATION
+                animator.SetTrigger("Push");
 
+                // STORE CURRENT VEGETABLE
                 if (currentVeg != null)
                 {
-                    currentVeg.MoveSlicesToVessel();
+                    cachedVeg = currentVeg;
+
+                    // WAIT BEFORE MOVING SLICES
+                    Invoke(nameof(MoveSlicesWithDelay), 0.45f);
                 }
 
                 hasPushedSlices = true;
             }
         }
 
-        // RETURN LEFT + SPAWN NEXT
+        // =====================================
+        // LEFT ARROW = RETURN LEFT + SPAWN NEXT
+        // =====================================
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (hasPushedSlices)
             {
-                animator.SetBool("isPushing", false);
-
+                // PLAY RETURN ANIMATION
                 animator.SetTrigger("ReturnLeft");
 
-                // WAIT A LITTLE BEFORE SPAWNING
+                // SPAWN NEXT VEGETABLE AFTER DELAY
                 Invoke(nameof(SpawnNextVegetable), 0.5f);
 
-                hasPushedSlices = false;    
+                hasPushedSlices = false;
             }
         }
     }
+
+    // =====================================
+    // MOVE SLICES AFTER PUSH ANIMATION
+    // =====================================
+    void MoveSlicesWithDelay()
+    {
+        if (cachedVeg != null)
+        {
+            cachedVeg.MoveSlicesToVessel();
+        }
+    }
+
+    // =====================================
+    // SPAWN NEXT VEGETABLE
+    // =====================================
     void SpawnNextVegetable()
     {
         VegetableSpawner.Instance.SpawnVegetable();

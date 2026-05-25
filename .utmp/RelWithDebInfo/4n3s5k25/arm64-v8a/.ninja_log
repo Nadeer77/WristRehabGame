@@ -1,0 +1,10 @@
+# ninja log v5
+0	2831	1779720570280893657	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	270c38d2d4105b61
+6	3377	1779720570804384183	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	5f1fbf38535d341b
+6	3389	1779720570836926848	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2aa828fdeeff8fcc
+1	3717	1779720571166245968	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	61fbb2a0af569c1f
+1	3731	1779720571180821851	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	f9d2edfaff6ce8aa
+5	3825	1779720571277216776	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	8e194f9b48a00c8f
+5	3943	1779720571403255695	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	282310f3c4a25e6e
+0	5032	1779720572483135683	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	29080cff2abe6240
+5033	5082	1779720572548300271	/home/Nadeer/unity projects/WristRehabGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4n3s5k25/obj/arm64-v8a/libgame.so	5eb9885954fbf06c

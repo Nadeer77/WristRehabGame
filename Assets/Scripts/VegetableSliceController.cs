@@ -55,6 +55,11 @@ public class VegetableSliceController : MonoBehaviour
 
         movedSlices.Add(slice);
 
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.AddScore(1);
+        }
+
         currentSlice++;
 
         // MOVE ENTIRE BANANA BODY

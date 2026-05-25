@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 219702245}
   - component: {fileID: 219702244}
   - component: {fileID: 219702243}
+  - component: {fileID: 219702246}
   m_Layer: 5
   m_Name: DownButton
   m_TagString: Untagged
@@ -389,6 +390,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219702241}
   m_CullTransparentMesh: 1
+--- !u!114 &219702246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219702241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a150b2c2d9c1d03a10de88fe3a69b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonFlash
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +788,7 @@ GameObject:
   - component: {fileID: 495028678}
   - component: {fileID: 495028677}
   - component: {fileID: 495028676}
+  - component: {fileID: 495028679}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -896,6 +910,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495028674}
   m_CullTransparentMesh: 1
+--- !u!114 &495028679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495028674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a150b2c2d9c1d03a10de88fe3a69b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonFlash
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,6 +1335,10 @@ MonoBehaviour:
   audioSource: {fileID: 1370491136}
   knifeCutSFX: {fileID: 8300000, guid: 5b9922ac01116cee0abf7aaf2cdbe069, type: 3}
   vesselSFX: {fileID: 8300000, guid: a83dd123c27ada021aff6d977db8fd2e, type: 3}
+  upButton: {fileID: 1776437239}
+  downButton: {fileID: 219702246}
+  leftButton: {fileID: 495028679}
+  rightButton: {fileID: 2037511634}
 --- !u!4 &1368721951
 Transform:
   m_ObjectHideFlags: 0
@@ -1490,6 +1520,7 @@ GameObject:
   - component: {fileID: 1776437238}
   - component: {fileID: 1776437237}
   - component: {fileID: 1776437236}
+  - component: {fileID: 1776437239}
   m_Layer: 5
   m_Name: UpButton
   m_TagString: Untagged
@@ -1611,6 +1642,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776437234}
   m_CullTransparentMesh: 1
+--- !u!114 &1776437239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776437234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a150b2c2d9c1d03a10de88fe3a69b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonFlash
 --- !u!33 &1934034313
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1955,6 +1998,7 @@ GameObject:
   - component: {fileID: 2037511633}
   - component: {fileID: 2037511632}
   - component: {fileID: 2037511631}
+  - component: {fileID: 2037511634}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -2076,6 +2120,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037511629}
   m_CullTransparentMesh: 1
+--- !u!114 &2037511634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037511629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a150b2c2d9c1d03a10de88fe3a69b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtonFlash
 --- !u!1 &2075209415
 GameObject:
   m_ObjectHideFlags: 0

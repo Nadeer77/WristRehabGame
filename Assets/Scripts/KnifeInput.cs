@@ -12,6 +12,10 @@ public class KnifeInput : MonoBehaviour
 
     public AudioClip knifeCutSFX;
     public AudioClip vesselSFX;
+    public UIButtonFlash upButton;
+    public UIButtonFlash downButton;
+    public UIButtonFlash leftButton;
+    public UIButtonFlash rightButton;
 
     void Start()
     {
@@ -21,16 +25,28 @@ public class KnifeInput : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            downButton.Flash();
             Cut();
+        }
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            upButton.Flash();
             ReturnUp();
+        }
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            rightButton.Flash();
             PushToVessel();
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            leftButton.Flash();
             ReturnAndSpawn();
+        }
     }
 
     // =====================================

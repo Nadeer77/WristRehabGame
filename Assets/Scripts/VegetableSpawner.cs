@@ -8,7 +8,6 @@ public class VegetableSpawner : MonoBehaviour
     public Transform spawnPoint;
 
     private GameObject currentVegetable;
-
     private bool spawnBanana = true;
 
     public static VegetableSpawner Instance;
